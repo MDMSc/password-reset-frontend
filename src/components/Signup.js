@@ -27,7 +27,7 @@ export default function Signup() {
       return;
     } else {
       try {
-        fetch(`${API}/signup`, {
+        fetch(`${API}/users/signup`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

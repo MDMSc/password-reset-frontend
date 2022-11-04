@@ -22,7 +22,7 @@ export default function Password() {
       return;
     } else {
       try {
-        fetch(`${API}/forgot-password`, {
+        fetch(`${API}/users/forgot-password`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

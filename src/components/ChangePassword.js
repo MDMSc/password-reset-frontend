@@ -18,7 +18,7 @@ export default function ChangePassword() {
   useEffect(() => {
     if(token){
     try {
-      fetch(`${API}/reset-password?token=${token}`)
+      fetch(`${API}/users/reset-password?token=${token}`)
         .then((response) => response.json())
         .then((data) => {
           if (data.success) {
@@ -52,7 +52,7 @@ export default function ChangePassword() {
       return;
     } else {
       try {
-        fetch(`${API}/reset-password?token=${token}`, {
+        fetch(`${API}/users/reset-password?token=${token}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

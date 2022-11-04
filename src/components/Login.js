@@ -20,7 +20,7 @@ export default function Login() {
     setSuccess("");
     setError("");
 
-    fetch(`${API}/login`, {
+    fetch(`${API}/users/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(credential),
