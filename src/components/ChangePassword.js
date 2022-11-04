@@ -143,39 +143,5 @@ export default function ChangePassword() {
         )
       )}
     </Fragment>
-    // <div>
-    //   {error && <Alert className="message" color="danger">{error}</Alert>}
-    //   {success && <Alert className="message" color="success">{success}</Alert>}
-    //   <Form className="signup_form">
-    //     <h2 className="text-center">Reset Password</h2>
-    //     <FormGroup>
-    //       <Label>
-    //         Password<sup className="required">*</sup>
-    //       </Label>
-    //       <Input
-    //         type="password"
-    //         placeholder="Password"
-    //         name="password"
-    //         required
-    //         onChange={handleChange}
-    //       />
-    //     </FormGroup>
-    //     <FormGroup>
-    //       <Label>
-    //         Confirm Password<sup className="required">*</sup>
-    //       </Label>
-    //       <Input
-    //         type="password"
-    //         placeholder="Password"
-    //         name="confirmP"
-    //         required
-    //         onChange={handleChange}
-    //       />
-    //     </FormGroup>
-    //     <Button type="submit" block color="dark" size="lg" onClick={handleSubmit}>
-    //       Sign Up
-    //     </Button>
-    //   </Form>
-    // </div>
   );
 }

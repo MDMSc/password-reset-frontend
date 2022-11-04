@@ -1,1 +1,1 @@
-export const API = "http://localhost:3001/users"
+export const API = "https://password-reset-murtaza.herokuapp.com/users"
