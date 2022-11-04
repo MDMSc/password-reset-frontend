@@ -1,0 +1,22 @@
+.login_form{
+    width: 100%;
+    max-width: 30rem;
+    padding: 1.5rem;
+    margin: 5vh auto 0 auto;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.message{
+    width: 100%;
+    max-width: 30rem;
+    margin: 1vh auto 0 auto;
+}
+
+.required{
+    color: red;
+}
+
+a{
+    text-decoration: none !important;
+}

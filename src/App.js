@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Button, Form, FormGroup, Input, Label } from "reactstrap";
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
+import ForgetPassword from "./components/ForgetPassword";
+import ChangePassword from "./components/ChangePassword";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/forgot-password" element={<ForgetPassword />} />
+      <Route path="/reset-password/:token" element={<ChangePassword />} />
+      <Route path="/not-found" element={<NotFound />} />
+      <Route path="/*" element={<Navigate to="/not-found" replace />} />
+    </Routes>
+    </BrowserRouter>
   );
 }
 
